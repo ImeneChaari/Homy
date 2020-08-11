@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+	<title> Contact Us</title>	
+	<meta charset="utf-8">
+    <link rel="stylesheet" href="css/contact.css">
+   
+</head>
+
+<body>
+    <div class="header-div">
+        <nav class="navigation-bar">
+            <div class="logo-nav">
+                <a href="file:///C:/Users/Karim/Desktop/stage/HOMY/homy.html">
+                    <img src="images/Logo.png" class="logo">
+                </a>
+            </div>
+            <div class="nav-bar">
+                <a href="file:///C:/Users/Karim/Desktop/stage/HOMY/homy.html">HOME</a>
+                <a href="file:///C:/Users/Karim/Desktop/stage/HOMY/shop.html">SHOP</a>
+                <a href="file:///C:/Users/Karim/Desktop/stage/HOMY/contact.html">CONTACT US</a>
+            </div>
+            <div class="nav-icons" id="cart">
+                <input type="image" src="images/wishlist.png" alt="wishlist" onclick="showWishlist();" class="nav-icon">
+                <input type="image" src="images/cart.png" alt="cart" onclick="showCart();" class="nav-icon">
+            </div>
+        </nav>
+
+    </div>
+    <header>
+        <h1>
+           CONTACT US
+        </h1>
+        <p style="margin:0;">
+            If you have questions, feel free to get in touch
+        </p>
+        <div class="line">
+           
+        </div>
+        
+    </header>
+    <main>
+        <div class="info">
+
+            <div class="info-content">
+                <div class="info-text">
+                    <h3>PHONE</h3>
+                    <p> (+216) 22 000 111</p>                 
+                </div>    
+                <img src="images/mobile.png" alt="" class="info-img">
+            </div>
+
+            <div class="info-content">
+                <div class="info-text">
+                    <h3>ADDRESS</h3>
+                    <p>Le15,15 Carthago St,Tunis</p>
+                </div>
+                <img src="images/location.png" alt="" class="info-img"> 
+            </div>
+
+            <div class="info-content">
+                <div class="info-text">
+                    <h3>EMAIL</h3>
+                    <p>homy.contact@gmail.com</p>                  
+                </div> 
+                <img src="images/email.png" alt="" class="info-img">
+            </div>
+
+        </div>
+
+
+        <div class="form-div">
+            <form>
+                <div class="container1">
+                    <input type="text" id="name" name="name" placeholder="Name">               
+                    <input type="text" id="email" name="email" placeholder="Email">                
+                    <input type="text" id="phone" name="phone" placeholder="Phone"></input>
+                </div>
+                <div class="container2">
+                    <input type="text" id="subject" name="subject" placeholder="Subject"></input><br>
+                    <input type="text" id="message" name="message" placeholder="Message"></input>
+                </div>
+                <div class="buttons">
+                    <input type="submit" id="submit" value="Submit" onclick="validation()">
+                    <input type="reset" id="reset" value="Reset">
+                </div>    
+            </form>
+
+
+        </div>
+
+
+    </main>
+
+    <script src="js/contact.js"></script>
+</body>
+</html>

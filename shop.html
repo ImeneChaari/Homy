@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Our Shop</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/shop.css" />
+  </head>
+
+  <body onload="loading()">
+    <header>
+      <nav class="navigation-bar">
+        <div class="logo-nav">
+          <a href="file:///C:/Users/Karim/Desktop/stage/HOMY/homy.html">
+            <img src="images/Logo.png" class="logo" />
+          </a>
+        </div>
+        <div class="nav-bar">
+          <a href="file:///C:/Users/Karim/Desktop/stage/HOMY/homy.html">HOME</a>
+          <a href="">SHOP</a>
+          <a href="file:///C:/Users/Karim/Desktop/stage/HOMY/contact.html"
+            >CONTACT US</a
+          >
+        </div>
+        <div class="nav-icons" id="cart">
+          <input
+            type="image"
+            src="images/wishlist.png"
+            alt="wishlist"
+            onclick="showWishlist();"
+            class="nav-icon"
+          />
+          <input
+            type="image"
+            src="images/cart.png"
+            alt="cart"
+            onclick="showCart();"
+            class="nav-icon"
+          />
+        </div>
+      </nav>
+    </header>
+
+    <div class="content">
+      <div class="grid-btns">
+        <p class="grid-view">VIEW BY</p>
+        <button class="grid-btn" onclick="displayOne()">1</button>
+        <button class="grid-btn" onclick="displayTwo()">2</button>
+        <button class="grid-btn" onclick="displayThree()">3</button>
+      </div>
+
+      <div class="products">
+        <div class="product" id="prod1">
+          <img src="products/pillow1.jpg" class="product-img" />
+          <div class="description">
+            <p class="name">AMELIE pillow</p>
+            <p class="price">70DT</p>
+            <div class="add-btns">
+              <input
+                type="image"
+                src="images/add.png"
+                alt="add"
+                onclick="addToWishlist('1');"
+              />
+              <input
+                type="image"
+                src="images/buy.png"
+                alt="buy"
+                onclick="buy('1');"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="product" id="prod2">
+          <img src="products/pillow2.jpg" class="product-img" />
+          <div class="description">
+            <p class="name">SOFIA pillow</p>
+            <p class="price">70DT</p>
+            <div class="add-btns">
+              <input
+                type="image"
+                src="images/add.png"
+                alt="add"
+                onclick="addToWishlist('2');"
+              />
+              <input
+                type="image"
+                src="images/buy.png"
+                alt="buy"
+                onclick="buy('2');"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="product" id="prod3">
+          <img src="products/pillow3.jpg" class="product-img" />
+          <div class="description">
+            <p class="name">AMANDA pillow</p>
+            <p class="price">70DT</p>
+            <div class="add-btns">
+              <input
+                type="image"
+                src="images/add.png"
+                alt="add"
+                onclick="addToWishlist('3');"
+              />
+              <input
+                type="image"
+                src="images/buy.png"
+                alt="buy"
+                onclick="buy('3');"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="product" id="prod4">
+          <img src="products/pillow4.jpg" class="product-img" />
+          <div class="description">
+            <p class="name">NAOMI pillow</p>
+            <p class="price">70DT</p>
+            <div class="add-btns">
+              <input
+                type="image"
+                src="images/add.png"
+                alt="add"
+                onclick="addToWishlist('4');"
+              />
+              <input
+                type="image"
+                src="images/buy.png"
+                alt="buy"
+                onclick="buy('4');"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="product" id="prod5">
+          <img src="products/pillow5.jpg" class="product-img" />
+          <div class="description">
+            <p class="name">SALLY pillow</p>
+            <p class="price">70DT</p>
+            <div class="add-btns">
+              <input
+                type="image"
+                src="images/add.png"
+                alt="add"
+                onclick="addToWishlist('5');"
+              />
+              <input
+                type="image"
+                src="images/buy.png"
+                alt="buy"
+                onclick="buy('5');"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="product" id="prod6">
+          <img src="products/pillow6.jpg" class="product-img" />
+          <div class="description">
+            <p class="name">VIRGINIA pillow</p>
+            <p class="price">70DT</p>
+            <div class="add-btns">
+              <input
+                type="image"
+                src="images/add.png"
+                alt="add"
+                onclick="addToWishlist('6');"
+              />
+              <input
+                type="image"
+                src="images/buy.png"
+                alt="buy"
+                onclick="buy('6');"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="product" id="prod7">
+          <img src="products/rug1.jpg" class="product-img" />
+          <div class="description">
+            <p class="name">LOUIS rug</p>
+            <p class="price">300DT</p>
+            <div class="add-btns">
+              <input
+                type="image"
+                src="images/add.png"
+                alt="add"
+                onclick="addToWishlist('7');"
+              />
+              <input
+                type="image"
+                src="images/buy.png"
+                alt="buy"
+                onclick="buy('7');"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="product" id="prod8">
+          <img src="products/rug2.jpg" class="product-img" />
+          <div class="description">
+            <p class="name">IRIS rug</p>
+            <p class="price">350DT</p>
+            <div class="add-btns">
+              <input
+                type="image"
+                src="images/add.png"
+                alt="add"
+                onclick="addToWishlist('8');"
+              />
+              <input
+                type="image"
+                src="images/buy.png"
+                alt="buy"
+                onclick="buy('8');"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="product" id="prod9">
+          <img src="products/rug3.jpg" class="product-img" />
+          <div class="description">
+            <p class="name">CODY rug</p>
+            <p class="price">300DT</p>
+            <div class="add-btns">
+              <input
+                type="image"
+                src="images/add.png"
+                alt="add"
+                onclick="addToWishlist('9');"
+              />
+              <input
+                type="image"
+                src="images/buy.png"
+                alt="buy"
+                onclick="buy('9');"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="product" id="prod10">
+          <img src="products/rug4.jpg" class="product-img" />
+          <div class="description">
+            <p class="name">LARAH rug</p>
+            <p class="price">400DT</p>
+            <div class="add-btns">
+              <input
+                type="image"
+                src="images/add.png"
+                alt="add"
+                onclick="addToWishlist('10');"
+              />
+              <input
+                type="image"
+                src="images/buy.png"
+                alt="buy"
+                onclick="buy('10');"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="product" id="prod11">
+          <img src="products/rug5.jpg" class="product-img" />
+          <div class="description">
+            <p class="name">ALLEY rug</p>
+            <p class="price">250DT</p>
+            <div class="add-btns">
+              <input
+                type="image"
+                src="images/add.png"
+                alt="add"
+                onclick="addToWishlist('11');"
+              />
+              <input
+                type="image"
+                src="images/buy.png"
+                alt="buy"
+                onclick="buy('11');"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="product" id="prod12">
+          <img src="products/rug6.jpg" class="product-img" />
+          <div class="description">
+            <p class="name">POLLY rug</p>
+            <p class="price">200DT</p>
+            <div class="add-btns">
+              <input
+                type="image"
+                src="images/add.png"
+                alt="add"
+                onclick="addToWishlist('12');"
+              />
+              <input
+                type="image"
+                src="images/buy.png"
+                alt="buy"
+                onclick="buy('12');"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="product" id="prod13">
+          <img src="products/pouf1.jpg" class="product-img" />
+          <div class="description">
+            <p class="name">MERRY poof</p>
+            <p class="price">90DT</p>
+            <div class="add-btns">
+              <input
+                type="image"
+                src="images/add.png"
+                alt="add"
+                onclick="addToWishlist('13');"
+              />
+              <input
+                type="image"
+                src="images/buy.png"
+                alt="buy"
+                onclick="buy('13');"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="product" id="prod14">
+          <img src="products/pouf2.jpg" class="product-img" />
+          <div class="description">
+            <p class="name">ELORA poof</p>
+            <p class="price">110DT</p>
+            <div class="add-btns">
+              <input
+                type="image"
+                src="images/add.png"
+                alt="add"
+                onclick="addToWishlist('14');"
+              />
+              <input
+                type="image"
+                src="images/buy.png"
+                alt="buy"
+                onclick="buy('14');"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="product" id="prod15">
+          <img src="products/pouf3.jpg" class="product-img" />
+          <div class="description">
+            <p class="name">ELADIE pouf</p>
+            <p class="price">115DT</p>
+            <div class="add-btns">
+              <input
+                type="image"
+                src="images/add.png"
+                alt="add"
+                onclick="addToWishlist('15');"
+              />
+              <input
+                type="image"
+                src="images/buy.png"
+                alt="buy"
+                onclick="buy('15');"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="product" id="prod16">
+          <img src="products/plant1.jpg" class="product-img" />
+          <div class="description">
+            <p class="name">Round pot plant</p>
+            <p class="price">50DT</p>
+            <div class="add-btns">
+              <input
+                type="image"
+                src="images/add.png"
+                alt="add"
+                onclick="addToWishlist('16');"
+              />
+              <input
+                type="image"
+                src="images/buy.png"
+                alt="buy"
+                onclick="buy('16');"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="product" id="prod17">
+          <img src="products/plant2.jpg" class="product-img" />
+          <div class="description">
+            <p class="name">Square pot plant</p>
+            <p class="price">55DT</p>
+            <div class="add-btns">
+              <input
+                type="image"
+                src="images/add.png"
+                alt="add"
+                onclick="addToWishlist('17');"
+              />
+              <input
+                type="image"
+                src="images/buy.png"
+                alt="buy"
+                onclick="buy('17');"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="product" id="prod18">
+          <img src="products/plant3.jpg" class="product-img" />
+          <div class="description">
+            <p class="name">Wooden pot plant</p>
+            <p class="price">50DT</p>
+            <div class="add-btns">
+              <input
+                type="image"
+                src="images/add.png"
+                alt="add"
+                onclick="addToWishlist('18');"
+              />
+              <input
+                type="image"
+                src="images/buy.png"
+                alt="buy"
+                onclick="buy('18');"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="product" id="prod19">
+          <img src="products/deco1.jpg" class="product-img" />
+          <div class="description">
+            <p class="name">Wall shelf</p>
+            <p class="price">35DT</p>
+            <div class="add-btns">
+              <input
+                type="image"
+                src="images/add.png"
+                alt="add"
+                onclick="addToWishlist('19');"
+              />
+              <input
+                type="image"
+                src="images/buy.png"
+                alt="buy"
+                onclick="buy('19');"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="product" id="prod20">
+          <img src="products/deco2.jpg" class="product-img" />
+          <div class="description">
+            <p class="name">Honeycomb shelf</p>
+            <p class="price">115DT</p>
+            <div class="add-btns">
+              <input
+                type="image"
+                src="images/add.png"
+                alt="add"
+                onclick="addToWishlist('20');"
+              />
+              <input
+                type="image"
+                src="images/buy.png"
+                alt="buy"
+                onclick="buy('20');"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="cart-modal">
+      <div class="cart-content">
+        <span id="closeCart" onclick="closeCart();">&times;</span>
+        <table id="myTable">
+          <tr class="row" id="titlesRow">
+            <th>Product</th>
+            <th>Unit Price</th>
+            <th>Quantity</th>
+            <th>Total price</th>
+            <th></th>
+          </tr>
+          <tr class="row" id="initial">
+            <th>-</th>
+            <th>-</th>
+            <th>-</th>
+            <th>-</th>
+            <th></th>
+          </tr>
+          <tr class="row">
+            <th></th>
+            <th></th>
+            <th>Total sum</th>
+            <th id="totalSum">0DT</th>
+            <th></th>
+          </tr>
+        </table>
+        <button type="button" id="emptyCartBtn" onclick="emptyCart()">
+          Empty cart
+        </button>
+      </div>
+    </div>
+
+    <div id="wishlist-modal">
+      <div class="wishlist-content">
+        <span id="closeWishlist" onclick="closeWishlist();">&times;</span>
+
+        <button type="button" id="emptyWishlistBtn" onclick="emptyWishlist();">
+          Empty wishlist
+        </button>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-contact-container">
+          <div class="footer-contact">
+            <img src="images/mobile.png" alt="" class="footer-contact-icon"/>
+            <h3 class="footer-contact-text"> (+216) 22 000 111</h3>
+          </div>
+          <div class="footer-contact">
+            <img src="images/location.png" alt="" class="footer-contact-icon"/>
+            <h3 class="footer-contact-text"> Le15,15 Carthago St,Tunis
+
+            </h3>
+          </div>
+        </div>
+        <div class="footer-icons">
+          <img src="images/instagram.png" alt="ig" class="footer-icon" />
+          <img src="images/facebook.png" alt="fb" class="footer-icon"/>
+          <img src="images/youtube.png" alt="yt" class="footer-icon"/>
+          <img src="images/twitter.png" alt="tw" class="footer-icon"/>
+        </div>
+        <h1 class="copyrights">Copyrights © 2020 All Rights Reserved. HOMY.</h1>
+      </div>
+    </footer>
+
+    <script src="js/shop.js"></script>
+  </body>
+</html>

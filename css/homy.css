@@ -1,0 +1,273 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.logo {
+  margin: 10px;
+  width: 100px;
+  height: 100px;
+  top: 20px;
+}
+.nav-icon {
+  width: 30px;
+  height: 30px;
+}
+.nav-icons {
+  display: flex;
+  justify-content: space-between;
+  width: 80px;
+}
+header {
+  background: none;
+  top: 0;
+  margin-bottom: 1%;
+}
+.navigation-bar {
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Courier New", Courier, monospace;
+}
+hr {
+  width: 700px;
+}
+.navigation-bar a {
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-around;
+  padding-right: 100px;
+  padding-left: 100px;
+  padding-bottom: 20px;
+  width: 600px;
+  border-bottom: 1px solid rgba(92, 73, 9, 0.712);
+}
+
+/**********---------------------SLIDESHOW--------------------------********/
+
+* {
+  box-sizing: border-box;
+}
+
+.mySlides {
+  display: none;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 350px;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(202, 161, 114, 0.699);
+}
+body {
+  font-family: "Courier New", Courier, monospace;
+}
+h1,
+h2 {
+  margin: 0;
+}
+h1 {
+  font-size: 40px;
+}
+
+.text {
+  position: absolute;
+  top: 5px;
+  margin-top: 1%;
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  left: 7%;
+}
+.slideContent {
+  margin-top: 3%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 60vh;
+}
+.description {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  margin-right: 10%;
+  height: 400px;
+}
+
+.shopnow {
+  text-decoration: underline;
+  color: black;
+  font-weight: bolder;
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.translate {
+  -webkit-animation-name: translate;
+  -webkit-animation-duration: 700ms;
+  animation-name: translate;
+  animation-duration: 700ms;
+  animation-timing-function: ease-in-out;
+}
+.descriptionText {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 1px;
+  font-weight: bolder;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes translate {
+  from {
+    left: 2%;
+  }
+  to {
+    left: 7%;
+  }
+}
+
+@keyframes translate {
+  from {
+    left: 3%;
+  }
+  to {
+    left: 7%;
+  }
+}
+
+/*#section1{
+    background-image: url("images/welcome1.jpg");
+    background-repeat: no-repeat;
+    background-size: 1400px;
+    width: 100%;
+    height:700px;
+    position: relative;
+}
+.shop-btn{
+    width:150px;
+    height:70px;
+    border: 10px bold white;
+    color: black;
+    border-radius: 8px;
+    background-color:#ede6da;
+    opacity: 0.6;
+    position: absolute;
+    top: 85%;
+    right:50%;
+    left:50%;
+    font-size: 30px;
+    letter-spacing: 2px;
+    font-family: 'Courier New', Courier, monospace; 
+    font-weight: bolder;
+
+}*/
+
+/**********************--------------FOOTER-------------*************************/
+footer {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+.footer-container {
+  
+  padding-top: 20px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+  height: 100%;
+  border-top: 1px solid rgba(92, 73, 9, 0.712);
+}
+
+.footer-icon {
+  width: 30px;
+  margin: 20px;
+}
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  margin: 15px;
+}
+.copyrights {
+  font-size: 15px;
+  font-weight: lighter;
+  text-align: center;
+}
